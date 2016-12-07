@@ -1,0 +1,36 @@
+// ----------------------
+// Main 2 Column Layout
+// ----------------------
+
+@import "flex";
+
+@import "header";
+
+@import "content";
+
+@import "left-nav";
+
+@import "footer";
+
+.l-navigation, .l-left-nav,.l-content, .l-footer {
+  @include flex(1 100%);
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+@media screen and (min-width:500px) {
+    .l-header {
+        @include flex(1 100%);
+    }
+    .l-left-nav {
+        @include flex(2 200px);
+        max-width: 200px;     
+     }
+    .l-content {
+        @include flex(3 auto);
+        min-height:480px;
+    }
+    .l-footer {
+        @include flex(4 100%);
+    }
+}

@@ -1,0 +1,10 @@
+// ----------------------
+// Main Containers
+// ----------------------
+
+@import "flex";
+
+.l-content {
+  background: $background-color;
+  justify-content: flex-start; 
+}

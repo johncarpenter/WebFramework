@@ -1,0 +1,54 @@
+// ----------------------
+// Header Containers
+// ----------------------
+
+@import "flex";
+
+.l-navigation{
+  background: $navigation-background-color; 
+  @include flexbox();
+  justify-content:space-between; 
+  list-style: none;
+  
+  ul {
+    @include flexbox();
+    a {
+      text-decoration: none;
+      display: block;
+      padding: 1em;
+      color: $navigation-text-color;
+    }
+
+    a:hover {
+      background: darken($navigation-background-color, 2%);
+    }
+  }
+  li  {
+      display: inline-block;
+  }
+
+  .logo {
+    background-color: #ff0000;
+    border-radius: 50px;
+    display: inline-block;
+    height: 45px;
+    margin: 1em 0;
+    width: 45px;
+  }
+
+  @media screen and (max-width: 500px) {
+    /* On small screens, we are no longer using row direction but column */
+    ul{
+      @include flex(2 auto);
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .logo{
+      display:none;
+    }
+   
+
+  }
+
+}
