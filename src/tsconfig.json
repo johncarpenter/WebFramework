@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "",
+    "baseUrl": "WebFrameworks",
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
