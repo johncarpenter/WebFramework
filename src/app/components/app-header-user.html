@@ -1,0 +1,6 @@
+<ul id="profile-dropdown" class="dropdown-content">
+  <li><a (click)="signOut.emit()" href="#!">logout</a></li>
+</ul>
+<ul class="right">
+  <li><a materialize="dropdown" class="dropdown-button" data-activates="profile-dropdown" data-beloworigin="true"><i class="material-icons left">account_circle</i>{{auth?.profile.displayName}}<i class="material-icons right">arrow_drop_down</i></a></li>
+</ul>

@@ -19,19 +19,25 @@
 }
 
 @mixin order($val) {
-  -webkit-box-ordinal-group: $val;  
-  -moz-box-ordinal-group: $val;     
-  -ms-flex-order: $val;     
-  -webkit-order: $val;  
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
   order: $val;
 }
 
-.l-wrapper {
+.l-flex-wrapper {
   @include flexbox();
-  flex-wrap:wrap;
+  flex-wrap:nowrap;
   flex-direction:row;
   justify-content:flex-start;
-  align-items:stretch;
+  height: 100%;
 }
 
-
+.l-flex-wrapper-stack {
+  @include flexbox();
+  flex-wrap:nowrap;
+  flex-direction:column;
+  justify-content:flex-start;
+  height: 100%;
+}

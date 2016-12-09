@@ -9,25 +9,28 @@
 $font-primary: "Roboto", Helvetica, Arial, sans-serif;
 
 
+
 // = Colors
 // -----------------------------
-$color-primary: #445566;
-$color-secondary: #ff0000;
+$primary-color-dark:   #616161;
+$primary-color:        #07405C;
+$primary-color-light:  #F5F5F5;
+$primary-color-text:   #212121;
+$accent-color:         #28b8ff;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
 
-$background-color: #dddddd;
 
+@if not $primary-color-light {
+  $primary-color-light: lighten($primary-color, 15%);
+}
+@if not $primary-color-dark {
+  $primary-color-dark: darken($primary-color, 15%);
+}
 
-// Navigation Bar
-$navigation-background-color: #333333;
-$navigation-text-color: #555555;
-
-
-// Side Bar
-$leftnav-background-color: #ff33ff;
+$success-color: color("green", "base") !default;
+$error-color: color("red", "base") !default;
+$link-color: color("light-blue", "darken-1") !default;
 
 // Content
-
-
-// Footer
-$footer-background-color: #333333;
-$footer-text-color: #555555;

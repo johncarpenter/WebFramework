@@ -21,7 +21,8 @@
         "styles/application.scss",
         "../node_modules/font-awesome/css/font-awesome.css"
       ],
-      "scripts": [],
+      "scripts": [
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
