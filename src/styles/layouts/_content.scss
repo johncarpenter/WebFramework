@@ -7,7 +7,5 @@
 .l-content {
   justify-content: flex-start;
   @include flex(1 1 auto);
-  margin: 25px 0px;
-  padding: 20px;
   min-height: 90vh;
 }
